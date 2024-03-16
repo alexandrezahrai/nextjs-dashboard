@@ -1,3 +1,6 @@
+import '@/app/ui/global.css';
+import { inter, hanken } from '@/app/ui/fonts';
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +8,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${inter.variable} ${hanken.variable} font-hanken antialiased`}>{children}</body>
     </html>
   );
 }
